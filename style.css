@@ -1,0 +1,1030 @@
+/* ===============================
+header:
+=============================== */
+.header{
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+  position: fixed; /*fixed:絶対位置で場所を指定する*/
+  z-index:1000;
+  background-color: #ffffff;
+}
+
+.header_top{
+  width: 974px;
+  height: 100px;
+  margin: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body{
+  font-family: lust-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ===============================
+header:left
+=============================== */
+.header_left {
+  height: 100px;
+  margin: 28px 0 0 0;
+}
+
+.header_left h1{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 900;
+  text-shadow    : 
+  3px  3px 1px #ffffff,
+  -3px  3px 1px #ffffff,
+  3px -3px 1px #ffffff,
+  -3px -3px 1px #ffffff,
+  3px  0px 1px #ffffff,
+  0px  3px 1px #ffffff,
+  -3px  0px 1px #ffffff,
+  0px -3px 1px #ffffff;  
+  position: relative;
+  z-index: 1;
+}
+
+.header_left a::after{
+  content: '';
+  display: inline-block;
+  background-color: #caf1ff;
+  margin: 0 auto;
+  width: 239px;
+  height: 46px;
+  position: relative;
+  top: -35px;
+  left: 0px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  z-index: -1;
+}
+
+.header_left_up{
+  color: #00568d;
+}
+
+.header_left_down{
+  color: #0071bc;
+}
+/* ===============================
+header:right
+=============================== */
+.header_right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_right_1_group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_right_1_group_holiday{
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #29abe2;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.header_right_1_group_reception{
+  width: 142px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a99d;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.header_right_1_tell p{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333333;
+  margin: 8px 0 0 0;
+}
+
+.header_right_1_tell p::before{
+  content: url(images/tell.png)
+}
+
+.header_right_2 {
+  font-size: 14px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.header_right_2 p{
+  width: 270px;
+  margin: 0 auto;
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+.header_right_2 p::before{
+  content: url(images/slash_left.png);
+}
+
+.header_right_2 p::after{
+  content: url(images/slash_right.png);
+}
+
+.header_right_2 a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb1f00;
+  border: solid 3px #ffffff;
+  border-radius: 8px;
+  box-shadow: 4px 6px  #c7b299;
+  color: #ffffff;
+  height: 40px;
+  width: 225px;
+  margin: 5px auto 10px auto;
+}
+
+.header_right_2 a::after{
+  content: "メールでお見積もり";
+  color: #ffffff
+}
+
+/* ===============================
+header:バナー
+=============================== */
+
+.main_bunner{
+  width: 974px;
+  margin: 0px auto 18px auto;
+  border-top: solid 5px #9fd7e9;
+  border-collapse:collapse;
+  z-index: 1;
+}
+
+.main_bunner_1 , .main_bunner_2 , .main_bunner_3 , .main_bunner_4 , .main_bunner_5 , .main_bunner_6 {
+  padding-top: 18px;
+}
+
+.main_bunner_1:hover , .main_bunner_2:hover , .main_bunner_3:hover , .main_bunner_4:hover , .main_bunner_5:hover , .main_bunner_6:hover {
+  border-top: solid 5px #0071bc;
+  border-collapse:collapse;
+}
+
+.main_bunner_1:hover::after , .main_bunner_2:hover::after , .main_bunner_3:hover::after , .main_bunner_4:hover::after , .main_bunner_5:hover::after , .main_bunner_6:hover::after {
+  content: url(images/\ triangle.png);
+  display: inline-block;
+  position: relative;
+  top: -43px;
+  left: 45%;
+}
+
+.main_bunner ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border-collapse:collapse;
+}
+
+.main_bunner li{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-left: 2px solid #9fd7e9;
+}
+
+.main_bunner li:first-child{
+  border-left:none;
+}
+
+.main_bunner a{
+  background-size: contain;
+  padding: 0 40px 0 40px;
+  color: #00568d;
+}
+
+
+/* ===============================
+main:メインイメージ
+=============================== */
+
+.main_area{
+  width: 1004px;
+  margin: 139px auto 0 auto;
+}
+
+.main_img{
+  text-align: center;
+}
+
+.main_img p{
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  top: -75px;
+  right: -352px;
+  font-size: 22px;
+}
+
+.main_water_cover{
+  text-align: center;
+  margin: 45px 0 0 0;
+}
+
+/* ===============================
+main:メインイメージ　×　カードエリア１　の間
+=============================== */
+
+
+.main_card_middle{
+  margin: 35px 0 0 102px;
+  display: inline-block;
+  color: #00568d;
+  font-size: 30px;
+  font-weight: 900;
+  text-shadow    : 
+  3px  3px 1px #ffffff,
+  -3px  3px 1px #ffffff,
+  3px -3px 1px #ffffff,
+  -3px -3px 1px #ffffff,
+  3px  0px 1px #ffffff,
+  0px  3px 1px #ffffff,
+  -3px  0px 1px #ffffff,
+  0px -3px 1px #ffffff;  
+}
+
+.main_card_middle span{
+  display: inline-block;
+  color: #00568d;
+  font-size: 16px;
+  font-weight: 900;
+  text-shadow    : 
+  3px  3px 1px #ffffff,
+  -3px  3px 1px #ffffff,
+  3px -3px 1px #ffffff,
+  -3px -3px 1px #ffffff,
+  3px  0px 1px #ffffff,
+  0px  3px 1px #ffffff,
+  -3px  0px 1px #ffffff,
+  0px -3px 1px #ffffff;  
+}
+
+/* ===============================
+main:カードエリア１
+=============================== */
+
+.card1_all{
+  width: 915px;
+}
+
+.card1_set1,.card1_set2{
+  width: 915px;
+  display: flex;
+  justify-content: space-between;
+  margin: 47px auto 0 auto;
+}
+
+.card1{
+  width: 290px;
+  border: 1px solid;
+  border-color: #c3c3c3;
+}
+
+.card1_title p{
+  background-color: #0071bc;
+  padding: 18px 52px;
+  text-align: center;
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.card1_img{
+  margin: 4px 0;
+  text-align : center
+}
+
+
+.card1_list{
+  margin: 14px 0 0 15px;
+}
+
+.card1_list span{
+  color: #333333;
+  font-size: 16px;
+  font-weight:bold;
+  margin: 0 0 0 10px;
+}
+
+.card1_list ul{
+  list-style: none;
+  color: red;
+}
+
+.card1_list li{
+  padding: 6px 0 0 0;
+}
+
+.card1_article {
+  margin: 21px 0 0 0;
+}
+
+.card1_article p{
+  font-size: 12.58px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.card1_btn{
+  width: 260px;
+  height: 53px;
+  margin: 13px auto 33px auto;
+  background-color: #00a99d;
+  border-radius: 8px;
+  box-shadow: 0px 6px  #006837;
+}
+
+.card1_btn a{
+  text-decoration: none;
+  font-size: 13.1px;
+  font-weight:bold;
+  color: #ffffff;
+  width: 260px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1_btn a::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  content: "\f138";
+  color: #ffff00;
+  margin: 0 18px 0 0;
+}
+
+/* ===============================
+main:カードエリア１ ×　カードエリア２の間
+=============================== */
+
+.card1_2_middle{
+  width: 1004px;
+  margin: 0 auto;
+}
+
+.card1_2_middle_top{
+  text-align: center;
+  margin: 52px 0 0 0;
+}
+
+.card1_2_middle_bottom{
+  text-align: start;
+  margin: 36px 0 0 37px;
+}
+
+/* ===============================
+main:メインエリア３
+=============================== */
+.main_area3{
+  width: 1004px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ===============================
+main:メインエリア３：左側
+=============================== */
+
+.main_area3_left{
+  width: 684px;
+}
+
+.card_area2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.card2{
+  width: 331px;
+  margin: 20px 0 0 0;
+  padding: 6px 0 19px 0;
+  background-color: #e9f6fc;
+}
+
+.card2_title{
+  width: 316px;
+  height: 95px;
+  font-weight: bold;
+  margin: 0 auto 0 auto;
+  font-size: 17.62px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 23px;
+}
+
+.card2_title p {
+  margin: 0 0 0 10px;
+}
+
+.card2_title img::after {
+  content: "1";
+}
+
+.card2_img{
+  width: 279px;
+  margin: 6px auto 0 auto;
+}
+
+.card2_message{
+  font-size: 12.58px;
+  width: 296px;
+  margin: 19px auto 0 auto;
+  line-height: 18px;
+}
+
+/* ===============================
+main:メインエリア３：右側
+=============================== */
+.main_area3_right{
+  width: 231px;
+}
+
+.main_area3_right img{
+padding: 6px 0 0 0;
+}
+
+.main_area_3_service{
+  margin: 20px 0 0 0;
+  padding: 0 0 19px 19px;
+  border: 1px solid;
+  border-color: #c3c3c3;
+}
+
+.main_area_3_service ul{
+list-style: none;
+font-size: 12px;
+}
+
+.main_area_3_service li{
+  padding:23px 0 0 0 ;
+}
+
+.main_area_3_service a{
+  color: #000000;
+  display: block;
+}
+
+.main_area_3_service p{
+  font-weight: bold;
+  padding: 20px 0 0 0;
+}
+
+.main_area_3_service p::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f15c";
+  font-size: 24px;
+  color: #333333;
+}
+
+
+.main_area_3_service span::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f105";
+  font-size: 15.1px;
+  color: #ffff00;
+}
+
+.main_area3_bunner1 , .main_area3_bunner2 , .main_area3_bunner3 ,.main_area3_bunner4{
+  width: 212px;
+  margin: 0 auto;
+}
+
+.main_area3_bunner1 p, .main_area3_bunner2 p , .main_area3_bunner3 p ,.main_area3_bunner4 p{
+  font-size: 12px;
+  font-weight: bold;
+  border: 3px solid;
+  border-color: #00568d;
+  border-radius: 4px;
+  margin: 9px 0 0 0;
+  padding: 7px 0 7px 32px;
+}
+
+.main_area3_bunner1 a, .main_area3_bunner2 a , .main_area3_bunner3 a ,.main_area3_bunner4 a{
+  color: #00568d;
+  display: block;
+  width: 212px;
+}
+
+.main_area3_bunner1 p::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f03a";
+  font-size: 15.1px;
+  color: #00568d;
+}
+
+.main_area3_bunner2 p::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f128";
+  font-size: 15.1px;
+  color: #00568d;
+}
+
+.main_area3_bunner3 p::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f007";
+  font-size: 15.1px;
+  color: #00568d;
+}
+
+.main_area3_bunner4 p::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 12px 0 0;
+  content: "\f1ad";
+  font-size: 15.1px;
+  color: #00568d;
+}
+
+/* ===============================
+main:メインエリア３：下部（カードエリア３）
+=============================== */
+
+.card_area3_tittle{
+  margin: 37px 0 0 0;
+}
+
+.card_area3_tittle2{
+  margin: 37px 0 0 0;
+  width: 740px;
+}
+
+.card_area3{
+  margin: 0 0 0 0;
+  width: 690px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card3{
+  width: 131px;
+}
+
+
+.card3 span{
+  display: block;
+  text-align: center;
+  font-size: 22.86px;
+  color: #0071bc;
+}
+
+.card3 img{
+  margin: 5px 0 0 0;
+  width: 129px;
+  height: 106px;
+}
+
+.card3 p{
+  font-size: 14px;
+  color: #000000;
+  margin: 13px 0 0 0;
+}
+
+.card3_btn{
+  width: 260px;
+  height: 53px;
+  margin: 40px auto 80px auto;
+  background-color: #00a99d;
+  border-radius: 8px;
+  box-shadow: 0px 6px  #006837;
+}
+
+.card3_btn a{
+  text-decoration: none;
+  font-size: 13.1px;
+  font-weight:bold;
+  color: #ffffff;
+  width: 260px;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card3_btn a::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  content: "\f138";
+  color: #ffff00;
+  margin: 0 18px 0 0;
+}
+
+.card3_under_flex{
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -76px;
+  left: 242px;
+}
+
+.card3_under_flex p{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card3_under_flex p::before{
+  content: url(images/tell.png);
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+.card3_under_flex a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb1f00;
+  border: solid 3px #ffffff;
+  border-radius: 8px;
+  box-shadow: 4px 6px  #c7b299;
+  color: #ffffff;
+  height: 35px;
+  width: 197px;
+  margin: 5px 0 10px 10px;
+}
+
+.card3_under_flex a::after{
+  content: "メールでお見積もり";
+  color: #ffffff;
+  margin: 0 0 0 5px;
+  font-size: 11.5px;
+}
+
+/* ===============================
+footer:
+=============================== */
+.footer_befor{
+  background:#0071bc;
+}
+
+.footer_inner{
+  position: relative;
+  width: 1004px;
+  margin: 73px auto 0 auto;
+  display: flex;
+}
+
+.footer_after{
+  background-color: #00568d;
+}
+
+.footer_after_inner{
+  width: 1004px;
+  height: 34px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer_after p{
+  font-size: 10px;
+  color: #9fd7e9;
+  font-style: italic;
+  margin: 0 16px 0 0;
+}
+
+/* ===============================
+footer:左側
+=============================== */
+.footer_left{
+  width: 578px;
+  margin: 0 0 0 36px;
+}
+
+.footer_left_main{
+  margin: 14px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer_left_main1 img{
+  height: 71px;
+  width: 206px;
+}
+
+.footer_left_top p{
+  margin: 14px 0 0 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer_left_up{
+  color: #00568d;
+}
+
+.footer_left_down{
+  color: #0071bc;
+}
+
+.footer_list_area{
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 30px 0;
+}
+
+.footer_list_area1{
+  width: 206px;
+}
+
+.footer_list_area1_top a{
+  color: #ffffff;
+}
+
+.footer_list_area2 a{
+  color: #ffffff;
+}
+
+
+.footer_list_area1_top ul , .footer_list1_area1_under ul , .footer_list_area2 ul{
+  list-style: none;
+}
+
+.footer_list_area1_top li  , .footer_list_area2 li{
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer_list_area1_top li::before , .footer_list_area2 li::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  content: "\f105";
+  color: #ffff00;
+  margin: 0 10px 0 0;
+  padding: 15px 0 0 0;
+}
+
+.footer_list1_area1_under li{
+  font-size: 12px;
+  color: #9fd7e9;
+  margin: 0 0 0 20px;
+  padding: 10px 0 0 0;
+  text-decoration: underline;
+}
+
+.footer_list1_area1_under a{
+  color: #9fd7e9;
+}
+
+/* ===============================
+footer:右側
+=============================== */
+.footer_right_main2{
+  font-size: 14px;
+  color: #9fd7e9;
+  margin: 0 0 0 18px;
+}
+
+.ftr_img_1{
+  margin: 127px 0 0 0;
+}
+
+.ftr_img_1_float{
+  position: relative;
+  top: -40px;
+  left: 70px;
+}
+
+.ftr_img_1_float p{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.ftr_img_1_float p::before{
+  content: url(images/tell.png);
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+
+.ftr_img_2 {
+  margin: 12px 0 35px 0;
+}
+
+.ftr_img_2_float{
+  position: relative;
+  top: -72px;
+  left: 58px;
+}
+
+.ftr_img_2_float a{
+  text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb1f00;
+    border: solid 3px #ffffff;
+    border-radius: 8px;
+    box-shadow: 4px 6px #c7b299;
+    color: #ffffff;
+    height: 35px;
+    width: 197px;
+    margin: 5px 0 10px 10px;
+}
+
+.ftr_img_2_float a::after{
+  content: "メールでお見積もり";
+  color: #ffffff;
+  margin: 0 0 0 5px;
+  font-size: 11.5px;
+}
+
+.footer_right_btn{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -36px;
+  right: 33px;
+}
+
+.footer_right_btn a{
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  border: solid 6px #0071bc;
+  border-radius: 8px;
+  height: 70px;
+  width: 176px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.footer_right_btn a::before{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  margin: 0 6px 0 0;
+  content: "\f0d8";
+  font-size: 16px;
+  color: #0071bc;
+}
+
+/* ===============================
+リセットcss：HTML5 Doctor CSS Reset 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+=============================== */
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+  display:block;
+}
+
+nav ul {
+  list-style:none;
+}
+
+
+blockquote, q {
+  quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:'';
+  content:none;
+}
+
+a {
+  margin:0;
+  padding:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color:#ff9;
+  color:#000;
+  text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color:#ff9;
+  color:#000; 
+  font-style:italic;
+  font-weight:bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display:block;
+  height:1px;
+  border:0;   
+  border-top:1px solid #cccccc;
+  margin:1em 0;
+  padding:0;
+}
+
+input, select {
+  vertical-align:middle;
+}
+
+/* 
+HTML5 Doctor CSS Resetの特徴
+・全ての余白が消える（ブラウザの周辺、見出しなどの要素の上下など全て）
+・見出しや太字などの文字サイズはリセットされ全て統一されるが、文字の太さはリセットされない
+・テキストボックスや送信ボタンなどの<input>要素はブラウザ固有のものになる
+
+HTML5 Doctor CSS Resetは、一つ前に紹介したEric Meyer’s Reset CSS 2.0の欠点である一部のタグがHTML5に対応していないという欠点を克服したリセットCSSです。
+すべてをリセットするので、ブラウザのCSSを気にする必要がなく、慣れてくると非常に使いやすいです。
+余白（paddingやmarginなど）も全て自分で記述します。まっさらな状態から、全て自分でデザインを調整したい方にオススメです。
+*/
+
